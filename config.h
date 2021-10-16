@@ -14,10 +14,14 @@ static const char *colors[SchemeLast][2] = {
 	[SchemeOut] = { "#000000", "#00ffff" },
 };
 /* -l option; if nonzero, dmenu uses vertical list with given number of lines */
-static unsigned int lines      = 5;
+static unsigned int lines      = 10;
+static unsigned int columns    = 4;
 
 /*
  * Characters not considered part of a word while deleting words
  * for example: " /?\"&[]"
  */
 static const char worddelimiters[] = " ";
+
+/* Size of the window border */
+static const unsigned int border_width = 2;
